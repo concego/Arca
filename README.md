@@ -27,5 +27,18 @@ A **Arca** é um hub de escrita e organização "Local-First", focado em acessib
 4. Para levar o projeto para outro dispositivo, use o botão **"Exportar Projeto (JSON)"** e carregue-o na Arca do outro aparelho.
 
 ---
-**Desenvolvido por Anderson Carvalho (Eu Concego Jogar) com o apoio da Zapia.**
+
+## 🤝 Feedback e Contribuição
+
+Sua opinião é fundamental para a evolução da Arca! 
+Se você encontrou um bug ou tem uma sugestão de funcionalidade, entre em contato:
+
+📧 **Feedback via E-mail:** [euconcego@gmail.com](mailto:euconcego@gmail.com)
+
+## 🎖️ Créditos
+
+- **Idealização e Desenvolvimento:** [Anderson Carvalho](https://github.com/concego) (Projeto **Eu Concego Jogar** 🐉)
+- **Apoio Técnico:** Zapia (Sua assistente pessoal de IA)
+
+---
 🐉 *Inclusão Digital através da Tecnologia.*
