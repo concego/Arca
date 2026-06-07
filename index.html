@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arca - Gerenciador de Lore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Painel de Controle Adaptável -->
+    <header id="painel-controle">
+        <div id="modo-navegacao">
+            <input type="search" id="busca" aria-label="Pesquisar no acervo" placeholder="Pesquisar notas ou pastas...">
+            <button id="btn-abrir-pasta">Abrir Pasta</button>
+            <button id="btn-importar-json">Importar JSON</button>
+            <input type="file" id="input-json" class="hidden" accept=".json">
+        </div>
+        
+        <div id="modo-edicao" class="hidden">
+            <button id="btn-voltar" aria-label="Voltar para o índice">← Voltar</button>
+            <h2 id="nome-arquivo-atual" tabindex="0">Arquivo.md</h2>
+            <button id="btn-salvar" aria-label="Salvar alterações agora">Salvar</button>
+            <button id="btn-toggle-preview">Ver Preview</button>
+        </div>
+    </header>
+
+    <main id="conteudo-principal">
+        <!-- Boas-vindas e Exportação -->
+        <div id="home-acoes" class="center">
+            <p>Selecione uma pasta para começar ou importe um backup.</p>
+            <button id="btn-exportar-json" class="hidden">Exportar Projeto (JSON)</button>
+        </div>
+
+        <!-- Lista de sanfonas (pastas) -->
+        <div id="lista-arquivos" role="tree"></div>
+
+        <!-- Área do Editor -->
+        <div id="editor-container" class="hidden">
+            <details id="gaveta-simbolos">
+                <summary aria-label="Atalhos de escrita e símbolos">✍️ Símbolos</summary>
+                <div class="grade-simbolos">
+                    <button id="btn-travessao" aria-label="Inserir travessão">—</button>
+                    <button id="btn-aspas" aria-label="Inserir aspas">“”</button>
+                    <button id="btn-paranteses" aria-label="Inserir parênteses">()</button>
+                    <button id="btn-negrito" aria-label="Inserir negrito">**</button>
+                    <button id="btn-italico" aria-label="Inserir itálico">*</button>
+                    <button id="btn-citacao" aria-label="Inserir citação">></button>
+                </div>
+            </details>
+            
+            <textarea id="editor" placeholder="Sua lenda começa aqui..."></textarea>
+            <div id="preview" class="hidden" tabindex="0"></div>
+            <div id="status-salvamento" aria-live="polite"></div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
